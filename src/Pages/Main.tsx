@@ -3,6 +3,7 @@ import Profile from "../Components/Main/Profile"
 import Posts from "../Components/Main/Posts"
 import RelatedFriends from "../Components/Main/RelatedFriends"
 
+import "../Assets/styles/main.css";
 
 export default function Main () {
     return (

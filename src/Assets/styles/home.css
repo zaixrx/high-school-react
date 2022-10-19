@@ -1,3 +1,7 @@
+* {
+    font-weight: lighter;
+}
+
 .home {
     display: flex;
     justify-content: center;

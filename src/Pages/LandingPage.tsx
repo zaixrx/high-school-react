@@ -1,3 +1,5 @@
+import "../Assets/styles/home.css";
+
 export default function LandingPage () {
     return ( 
         <main>
