@@ -1,0 +1,52 @@
+.related-friends {
+    display: block;
+
+    position: sticky;
+    position: -webkit-sticky;
+    top: calc(75px + 1rem);
+    
+    width: 25%;
+    height: 0%;
+    
+    border-radius: 5px;
+}
+
+.related-friends .related-title {
+    padding: 1rem;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    
+    border: 1px solid #ccc;
+    color: var(--primaryText);
+    background-color: var(--blockBackground);
+}
+
+.related-friends-list {
+    display: flex;
+    flex-direction: column;
+    
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: var(--blockBackground);
+    border: 1px solid #ccc;
+}
+
+.related-friend {
+    display: flex;
+    align-items: center;
+    
+    gap: 1rem;
+    color: var(--textTwo);
+}
+
+.related-friend img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.related-friend .text-wrapper p {
+    font-size: .9rem;
+    color: var(--lightText);
+}

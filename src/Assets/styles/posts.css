@@ -1,0 +1,82 @@
+.posts {
+    display: flex;
+    flex-direction: column;
+
+    width: calc(50% - 2rem);
+    margin: 0 1rem;
+    gap: 1rem;
+}
+
+.post {
+    overflow: hidden;
+}
+
+.post .post-info {
+    display: flex;
+    align-items: center;
+    
+    gap: 1rem;
+    padding-left: 1.5rem;
+    width: calc(100% - 1.5rem - 2px);
+    height: 72px;
+    
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background-color: var(--blockBackground);
+
+    border: 1px solid #ccc;
+}
+
+.post .post-info img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.post .post-info p {
+    color: var(--secondaryText);
+    font-size: 1rem;
+}
+
+.post .post-image {
+    overflow: hidden;
+    object-fit: cover;
+
+    width: 100%;
+    border-radius: 5px;
+}
+
+.post .post-interactions {
+    display: flex;
+    align-items: center;
+    
+    gap: 5px;
+    height: 50px;
+    padding: 0 1rem;
+    width: calc(100% - 2rem - 2px);
+}
+
+.post .post-interaction {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.post .post-interactions i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+
+    font-size: 1.2rem;
+
+    transition: 200ms ease-in-out;
+}
+
+.post .post-interactions i:hover {
+    cursor: pointer;
+    background-color: var(--navHover);
+}

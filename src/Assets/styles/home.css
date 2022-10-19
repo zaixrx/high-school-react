@@ -1,0 +1,29 @@
+.home {
+    display: flex;
+    justify-content: center;
+}
+
+.home-section {
+    min-height: 840px;
+}
+
+.hero {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    
+    width: calc(100% - 2rem);    
+    max-width: var(--maxContent);    
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: lighter;
+    color: var(--primaryText);
+}
+
+.hero p {
+    color: var(--lightText);
+    font-size: 1.25rem;
+}
