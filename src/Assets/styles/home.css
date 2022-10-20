@@ -1,9 +1,6 @@
-* {
-    font-weight: lighter;
-}
-
 .home {
     display: flex;
+    font-weight: lighter;
     justify-content: center;
 }
 

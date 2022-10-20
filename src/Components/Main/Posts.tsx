@@ -1,5 +1,5 @@
-import "../../Assets/styles/posts.css";
 import image from "../../Assets/img/cool.png";
+import "../../Assets/styles/posts.css";
 
 const Post = (props:any) => (
     <div className="post">
