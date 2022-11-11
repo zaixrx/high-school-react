@@ -1,11 +1,17 @@
-import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { Link, useLocation } from "react-router-dom";
+
+import AuthenticationContext from "../Context/AuthenticationContext";
+
 import styles from "../Assets/styles/login.module.css";
 
 export default function Login() {
+    const { loginFunction } = useContext(AuthenticationContext);
+    
     const handleFormSubmition = (e : any) => {
-        e.preventDefault();
-    };
-
+        const error = loginFunction(e);
+    }
+    
     return (
         <div className={styles.login}>
             <div className={styles.login_background_layer}></div>

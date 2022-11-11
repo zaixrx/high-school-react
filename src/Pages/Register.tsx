@@ -1,4 +1,8 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+
+import AuthenticationContext from "../Context/AuthenticationContext";
+
 import styles from "../Assets/styles/login.module.css";
 
 export default function Login() {
@@ -6,15 +10,17 @@ export default function Login() {
         e.preventDefault();
     };
 
+    const { registerFunction } = useContext(AuthenticationContext);
+
     return (
         <div className={styles.login}>
             <div className={styles.login_background_layer}></div>
             <div className={styles.login_main}>
                 <h1 className={styles.login_main_text}>Register</h1>
-                <form className={styles.login_fields} onSubmit={handleFormSubmition} autoComplete="off">
+                <form className={styles.login_fields} onSubmit={registerFunction} autoComplete="off">
                     <div className={styles.login_field_group}>
-                        <input type="text" name="email" id="email" className={styles.login_field_input} placeholder=" " autoComplete="off" />
-                        <label htmlFor="email" className={styles.login_field_label}>Email</label>
+                        <input type="text" name="username" id="username" className={styles.login_field_input} placeholder=" " autoComplete="off" />
+                        <label htmlFor="username" className={styles.login_field_label}>Username</label>
                     </div>
                     <div className={styles.login_field_group}>
                         <input type="text" name="firstname" id="firstname" className={styles.login_field_input} placeholder=" " autoComplete="off" />

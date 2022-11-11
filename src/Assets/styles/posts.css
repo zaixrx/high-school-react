@@ -80,3 +80,29 @@
     cursor: pointer;
     background-color: var(--navHover);
 }
+
+.post-input {
+    padding: 1rem 0;
+}
+
+.post-input input {
+    margin-left: 2rem;
+    padding: .5rem 1rem;
+    outline: 0;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    background-color: #eee;   
+}
+
+.post-input button {
+    height: 100%;
+    margin-left: 1rem;
+    padding: 0 1.5rem;
+    cursor: pointer;
+    outline: 0;
+    border: 0;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1.05rem;
+    background-color: var(--buttonBackground);
+}
